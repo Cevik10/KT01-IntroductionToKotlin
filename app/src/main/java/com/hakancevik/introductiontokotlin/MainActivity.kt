@@ -147,5 +147,58 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        // Switch/Case - When
+        println("--------- Switch - When ---------")
+
+        val day = 3
+        var dayName = ""
+
+        when (day) {
+
+            1 -> dayName = "Monday"
+            2 -> dayName = "Tuesday"
+            3 -> dayName = "Wednesday"
+            else -> dayName = ""
+        }
+        println(dayName)
+
+
+        // For Loop
+        println("--------- For Loop ---------")
+
+        val doubleArray = doubleArrayOf(6.6, 4.8, 2.3, 5.9)
+
+        for (number in doubleArray) {
+            var x = (number / 2) % 3
+            println(x)
+
+        }
+
+        // [0,9] loop
+        for (i in 0..9) {
+            println(i)
+        }
+
+        val masterList = ArrayList<String>()
+        masterList.add("Wesley So")
+        masterList.add("Kasparov")
+        masterList.add("Fabiano C.")
+        masterList.add("Vladimir K.")
+
+        for (str in masterList) {
+            println("Grandmaster: $str")
+        }
+
+
+        // While Loop
+        println("--------- While Loop ---------")
+
+        var i = 3
+        while (i < 7) {
+            println("Beam me up Scotty!")
+            i += 1
+        }
+
+
     }
 }
